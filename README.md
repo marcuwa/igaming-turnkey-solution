@@ -1,24 +1,46 @@
-# 🎰 Casino Launchpad – Turnkey Online Casino Platform
+# Turnkey iGaming Platform
 
-A ready-to-deploy iGaming platform suite for online casino operators, private gaming networks, and white-label gaming businesses.
+A ready-to-deploy iGaming platform showcase for online casino operators, white-label gaming businesses, private gaming networks, and agent-based operator models.
 
-This platform includes casino frontend, backend management, user wallet system, game integrations, agent balance management, admin dashboard, and optional crypto payment gateway integration.
+This repository presents a complete service package covering casino frontend, backend management, user management, wallet and ledger systems, agent balance distribution, game provider integration, and optional crypto payment gateway integration.
+
+---
+
+## Live Demo / Contact
+
+For live demo access, admin dashboard preview, agent system walkthrough, game integration discussion, or custom deployment requirements:
+
+- **Discord:** `YOUR_DISCORD_USERNAME`
+
+Replace the placeholders above before publishing.
 
 ---
 
 ## Demo Preview
 
-### Casino Lobby
+Add your screenshots and GIFs to the following folders:
+
+- `assets/screenshots/`
+- `assets/gifs/`
+- `assets/diagrams/`
+
+Recommended first preview order:
+
+1. Homepage or landing page screenshot
+2. Casino lobby screenshot
+3. Game launch GIF
+4. Admin dashboard screenshot
+5. Agent balance transfer GIF
+6. Crypto deposit/withdrawal GIF
+7. Platform architecture diagram
+
+Example Markdown after adding assets:
+
+```md
 ![Casino Lobby](assets/screenshots/casino-lobby.png)
-
-### Player Wallet Flow
-![Wallet Flow](assets/gifs/deposit-withdraw-flow.gif)
-
-### Agent Balance Management
-![Agent Balance System](assets/gifs/agent-balance-transfer.gif)
-
-### Admin Dashboard
-![Admin Dashboard](assets/screenshots/admin-dashboard.png)
+![Agent Balance Transfer](assets/gifs/agent-balance-transfer.gif)
+![Platform Architecture](assets/diagrams/platform-architecture.png)
+```
 
 ---
 
@@ -26,16 +48,17 @@ This platform includes casino frontend, backend management, user wallet system, 
 
 - Casino website frontend
 - Backend/admin management system
-- User registration and account management
-- Player wallet and balance system
-- Agent/sub-manager balance system
-- Original games integration
-- Slot game integration
-- Live casino integration
+- Player registration and account management
+- Player wallet and transaction ledger
+- Agent and sub-agent balance system
+- Original casino game integration
+- Slot game provider integration
+- Live casino provider integration
 - Sportsbook integration
 - Crypto payment gateway option
+- Operator reporting and GGR overview
 - Custom UI/UX support
-- Custom backend feature development
+- Custom backend workflow development
 - Deployment and launch support
 
 ---
@@ -44,13 +67,15 @@ This platform includes casino frontend, backend management, user wallet system, 
 
 | Module | Description |
 |---|---|
-| Frontend Website | Player-facing casino website with lobby, wallet, profile, promotions, and game access |
-| Backend Admin | Operator dashboard for users, balances, agents, reports, games, and configuration |
-| User Management | Player accounts, roles, permissions, wallet records, and activity logs |
-| Agent System | Balance distribution system for operators, agents, sub-managers, and players |
-| Game Integration | Original games, slots, live casino, and sportsbook integrations |
-| Payment System | Agent balance model or integrated crypto payment gateway |
-| Customization | UI, backend logic, roles, payment flow, language, theme, and game layout customization |
+| Frontend Website | Player-facing casino website with lobby, wallet, profile, promotions, and game access. |
+| Backend Admin | Operator dashboard for users, balances, agents, reports, games, and site configuration. |
+| User Management | Player accounts, roles, permissions, account status, activity records, and user search. |
+| Wallet System | Internal player balance, transaction records, adjustment records, deposit/withdrawal workflows. |
+| Agent System | Balance distribution for operators, agents, sub-agents, managers, and direct players. |
+| Game Integration | Original games, slots, live casino, sportsbook, game launch API, callbacks, and provider settlement records. |
+| Payment System | Agent balance model or integrated crypto payment gateway. |
+| Reporting | GGR, transaction history, player activity, agent transfer records, provider reports. |
+| Customization | UI design, backend logic, roles, payment flow, language, theme, lobby layout, and custom rules. |
 
 ---
 
@@ -58,30 +83,60 @@ This platform includes casino frontend, backend management, user wallet system, 
 
 ### Option 1: Agent-Based Balance System
 
-The operator purchases platform balance and distributes it to players or sub-manager roles through an agent structure.
+The platform supports an internal operator-credit model. Operators can purchase internal site credit from the platform provider and distribute that balance to agents, sub-managers, or direct players.
+
+This model is useful for:
+
+- Agent-led gaming networks
+- Local operator structures
+- Private player communities
+- Controlled balance distribution
+- Operator-managed settlement models
 
 Example flow:
 
-1. Operator purchases site balance from platform provider.
-2. Operator receives internal site balance.
-3. Operator distributes balance to agents, sub-managers, or direct players.
-4. Players use site balance for gameplay.
-5. Operator manages revenue through GGR and internal settlement.
-
-This model is useful for private networks, local operator structures, agent-based player acquisition, and controlled balance distribution.
+```text
+Platform Provider
+    ↓ sells site credit
+Operator / Client
+    ↓ transfers balance
+Agent / Sub-Manager
+    ↓ transfers balance
+Player
+    ↓ plays games
+Casino Platform
+    ↓ records wallet, bets, results, and GGR
+Reports / Settlement
+```
 
 ### Option 2: Integrated Crypto Payment Gateway
 
-The platform can include a ready-to-use crypto payment gateway so operators can accept player deposits and manage withdrawals directly inside the platform.
+The platform can include a ready-to-use crypto payment gateway for deposit and withdrawal workflows.
 
-Supported flow:
+Typical flow:
 
-1. Player requests crypto deposit.
-2. System generates payment instruction or deposit flow.
-3. Deposit is confirmed.
-4. Player wallet is credited.
-5. Admin can review deposit and withdrawal records.
-6. Operator can configure limits, approval rules, and wallet behavior.
+```text
+Player requests deposit
+    ↓
+System creates payment instruction
+    ↓
+Crypto payment is detected/confirmed
+    ↓
+Player wallet is credited
+    ↓
+Admin can review transaction history
+```
+
+Possible gateway features:
+
+- Crypto deposit workflow
+- Crypto withdrawal workflow
+- Transaction history
+- Admin approval settings
+- Minimum/maximum amount settings
+- Manual or automatic review flow
+- Wallet ledger records
+- Operator-side reporting
 
 ---
 
@@ -93,29 +148,35 @@ The platform can support:
 - Slot games
 - Live casino providers
 - Sportsbook providers
-- Provider wallet integration
-- Seamless wallet or transfer wallet model
 - Game launch API
+- Provider callbacks
+- Seamless wallet model
+- Transfer wallet model
 - Bet history
-- Result callbacks
-- Provider settlement records
+- Round results
+- Provider settlement logs
+- Game category management
+- Game visibility controls
 
 ---
 
 ## Admin Features
 
+- Dashboard overview
 - User management
 - Agent and sub-agent management
-- Balance adjustment
-- Deposit/withdrawal review
+- Balance transfer and adjustment
+- Deposit and withdrawal review
 - Game provider configuration
-- Bonus/promotion configuration
+- Bonus and promotion configuration
 - Player activity logs
 - Wallet transaction history
 - GGR reporting
 - Role-based access control
 - Site settings
 - Theme and UI management
+- Provider status monitoring
+- Operator notes and manual review tools
 
 ---
 
@@ -123,18 +184,22 @@ The platform can support:
 
 The platform can be customized based on operator requirements:
 
-- Website branding
+- Brand logo and visual identity
 - Color/theme design
 - Landing page layout
-- Game lobby layout
+- Casino lobby layout
+- Game category structure
 - Admin dashboard fields
-- Agent commission logic
+- Agent commission or settlement logic
 - Balance transfer rules
+- Deposit and withdrawal review rules
 - Crypto payment flow
 - Language/localization
 - Sportsbook/casino provider selection
 - Custom bonus rules
 - Custom reporting dashboard
+
+See [`CUSTOMIZATION.md`](CUSTOMIZATION.md) for more details.
 
 ---
 
@@ -144,19 +209,74 @@ Available launch models:
 
 - Full managed deployment
 - White-label deployment
-- Custom frontend + existing backend
-- Existing frontend + custom backend
+- Custom frontend with existing backend
+- Existing frontend with custom backend
 - Game integration only
 - Payment gateway integration only
 - Agent system integration only
+- Admin dashboard customization
+
+See [`DEPLOYMENT.md`](DEPLOYMENT.md) and [`docs/deployment-options.md`](docs/deployment-options.md).
 
 ---
 
-## Contact
+## Documentation
 
-For demo access, custom requirements, or partnership inquiries:
+| File | Purpose |
+|---|---|
+| [`FEATURES.md`](FEATURES.md) | Complete feature overview. |
+| [`DEMO.md`](DEMO.md) | Demo asset plan and walkthrough script. |
+| [`MODULES.md`](MODULES.md) | Platform module details. |
+| [`PAYMENT_OPTIONS.md`](PAYMENT_OPTIONS.md) | Agent balance system and crypto gateway explanation. |
+| [`CUSTOMIZATION.md`](CUSTOMIZATION.md) | Custom UI/backend options. |
+| [`COMPLIANCE.md`](COMPLIANCE.md) | Compliance and responsible-use notice. |
+| [`FAQ.md`](FAQ.md) | Buyer-facing FAQ. |
+| [`CONTACT.md`](CONTACT.md) | Contact and demo request information. |
+| [`ROADMAP.md`](ROADMAP.md) | Planned improvements and future modules. |
+| [`SECURITY.md`](SECURITY.md) | Security overview and reporting. |
 
-- Discord: `your-discord-name`
-- Discord Server: `your-discord-invite-link`
-- Telegram: `optional`
-- Email: `optional`
+---
+
+## Suggested Repository Topics
+
+Add these topics in GitHub repository settings:
+
+```text
+igaming
+casino
+casino-platform
+online-casino
+turnkey-platform
+gambling-software
+sportsbook
+slot-games
+live-casino
+crypto-payments
+payment-gateway
+agent-system
+wallet-system
+user-management
+admin-dashboard
+frontend
+backend
+white-label
+saas
+gaming-platform
+```
+
+---
+
+## Request a Demo
+
+Contact us to request:
+
+- Live player-site demo
+- Admin dashboard demo
+- Agent system walkthrough
+- Crypto payment gateway demo
+- Game integration discussion
+- Custom UI quote
+- Backend workflow customization
+- Deployment consultation
+
+**Discord:** `YOUR_DISCORD_INVITE_LINK`

@@ -16,34 +16,6 @@ Replace the placeholders above before publishing.
 
 ---
 
-## Demo Preview
-
-Add your screenshots and GIFs to the following folders:
-
-- `assets/screenshots/`
-- `assets/gifs/`
-- `assets/diagrams/`
-
-Recommended first preview order:
-
-1. Homepage or landing page screenshot
-2. Casino lobby screenshot
-3. Game launch GIF
-4. Admin dashboard screenshot
-5. Agent balance transfer GIF
-6. Crypto deposit/withdrawal GIF
-7. Platform architecture diagram
-
-Example Markdown after adding assets:
-
-```md
-![Casino Lobby](assets/screenshots/casino-lobby.png)
-![Agent Balance Transfer](assets/gifs/agent-balance-transfer.gif)
-![Platform Architecture](assets/diagrams/platform-architecture.png)
-```
-
----
-
 ## What This Platform Provides
 
 - Casino website frontend

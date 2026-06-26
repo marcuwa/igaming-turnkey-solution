@@ -152,13 +152,6 @@ Available launch models:
 
 ---
 
-## Security & Compliance Notice
-
-This repository is a technical and commercial showcase. Operators are responsible for ensuring that their gaming business, payment flow, KYC/AML process, player age verification, responsible gaming controls, and local jurisdiction requirements are legally compliant before launch.
-
-
----
-
 ## Contact
 
 For demo access, custom requirements, or partnership inquiries:

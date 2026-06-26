@@ -10,7 +10,7 @@ This repository presents a complete service package covering casino frontend, ba
 
 For live demo access, admin dashboard preview, agent system walkthrough, game integration discussion, or custom deployment requirements:
 
-- **Discord:** `YOUR_DISCORD_USERNAME`
+- **Discord:** `turnkey_igaming`
 
 Replace the placeholders above before publishing.
 
@@ -165,4 +165,4 @@ Contact us to request:
 - Backend workflow customization
 - Deployment consultation
 
-**Discord:** `YOUR_DISCORD_INVITE_LINK`
+**Discord:** `turnkey_igaming`

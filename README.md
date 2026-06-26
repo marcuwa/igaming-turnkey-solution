@@ -1,4 +1,4 @@
-# Turnkey iGaming Platform
+# Turnkey iGaming Platform 2026
 
 A ready-to-deploy iGaming platform showcase for online casino operators, white-label gaming businesses, private gaming networks, and agent-based operator models.
 

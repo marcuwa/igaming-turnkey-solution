@@ -4,8 +4,6 @@ A ready-to-deploy iGaming platform suite for online casino operators, private ga
 
 This platform includes casino frontend, backend management, user wallet system, game integrations, agent balance management, admin dashboard, and optional crypto payment gateway integration.
 
-> Built for licensed operators and jurisdiction-compliant gaming businesses.
-
 ---
 
 ## Demo Preview
@@ -158,7 +156,6 @@ Available launch models:
 
 This repository is a technical and commercial showcase. Operators are responsible for ensuring that their gaming business, payment flow, KYC/AML process, player age verification, responsible gaming controls, and local jurisdiction requirements are legally compliant before launch.
 
-This service is intended for licensed or authorized gaming operators only.
 
 ---
 
